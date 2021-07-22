@@ -149,7 +149,11 @@ public class ResourceCentre {
 
 	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
 		String output = "";
+<<<<<<< HEAD
 		// write your code here
+=======
+
+>>>>>>> branch 'master' of https://github.com/20044664-Trygve-Khoo/ResourceCentre_Student.git
 		for (int i = 0; i < chromebookList.size(); i++) {
 
 			output += String.format("%-10s %-30s %-10s %-10s %-20s\n", chromebookList.get(i).getAssetTag(),
@@ -164,11 +168,20 @@ public class ResourceCentre {
 	
 	
 	public static void viewAllChromebook(ArrayList<Chromebook> chromebookList) {
+<<<<<<< HEAD
 		ResourceCentre.setHeader("CHROMEBOOK LIST");
 		String output = String.format("%-10s %-30s %-10s %-10s %-20s\n", "ASSET TAG", "DESCRIPTION",
 				"AVAILABLE", "DUE DATE","OPERATING SYSTEM");
+=======
+		String output =  String.format("%-10s %-30s %-10s %-10s %-20s\n", "ASSET TAG", "DESCRIPTION",
+				"AVAILABLE", "DUE DATE","OS");
+>>>>>>> branch 'master' of https://github.com/20044664-Trygve-Khoo/ResourceCentre_Student.git
 		
+<<<<<<< HEAD
 		output += retrieveAllChromebook(chromebookList);	
+=======
+		 output += retrieveAllChromebook(chromebookList);
+>>>>>>> branch 'master' of https://github.com/20044664-Trygve-Khoo/ResourceCentre_Student.git
 		System.out.println(output);
 		
 	}
@@ -192,6 +205,7 @@ public class ResourceCentre {
 	public static Chromebook inputChromebook() {	
 		//Chromebook cb = null;
 		// write your code here
+<<<<<<< HEAD
 		
 		String tag = Helper.readString("Enter asset tag > ");
 		String description = Helper.readString("Enter description > ");
@@ -200,6 +214,14 @@ public class ResourceCentre {
 		
 		Chromebook cb = new Chromebook(tag,description,os);
 		
+=======
+		String tag = Helper.readString("Enter asset tag > ");
+		String description = Helper.readString("Enter description > ");
+		String os = Helper.readString("Enter os > ");
+
+	 cb= new Chromebook(tag, description, os);
+
+>>>>>>> branch 'master' of https://github.com/20044664-Trygve-Khoo/ResourceCentre_Student.git
 		
 		return cb;
 		
@@ -208,6 +230,11 @@ public class ResourceCentre {
 		// write your code here
 		chromebookList.add(cb);
 		System.out.println("Chromebook added");
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> branch 'master' of https://github.com/20044664-Trygve-Khoo/ResourceCentre_Student.git
 	}
 	
 	//================================= Option 3 Loan an item (CRUD - Update) =================================
